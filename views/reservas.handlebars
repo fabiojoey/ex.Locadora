@@ -1,0 +1,24 @@
+<h1>Cadastro de Reserva de Veículos</h1>
+<form class="form" action="/reservas" method="POST">
+    <div class="form-control">
+        <label for="id_cliente">ID do Cliente:</label>
+        <input type="text" name="id_cliente" placeholder="ID do Cliente">
+    </div>
+    <div class="form-control">
+        <label for="id_veiculo">ID do Veículo:</label>
+        <select name="id_veiculo">
+            {{#each veiculos}}
+            <option value="{{this.id}}">{{this.marca}} - {{this.modelo}} ({{this.placa}})</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="data_inicio">Data de Início:</label>
+        <input type="date" name="data_inicio">
+    </div>
+    <div class="form-control">
+        <label for="data_fim">Data de Fim:</label>
+        <input type="date" name="data_fim">
+    </div>
+    <button type="submit">Cadastrar Reserva</button>
+</form>

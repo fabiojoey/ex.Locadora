@@ -1,0 +1,20 @@
+<h1>Editar Reserva:</h1>
+<form action="/editReserva" method="post">
+
+  <div class="form-control">
+    <label for="dataRetirada">Data de Retirada:</label>
+    <input type="date" name="dataRetirada" id="dataRetirada" value="{{reserva.dataRetirada}}">
+  </div>
+
+  <div class="form-control">
+    <label for="dataDevolucao">Data de Devolução:</label>
+    <input type="date" name="dataDevolucao" id="dataDevolucao" value="{{reserva.dataDevolucao}}">
+  </div>
+
+  <div class="form-control">
+    <label for="idReserva">ID do Cliente:</label>
+    <input name="idReserva" value="{{reserva.id}}">
+  </div>
+
+  <input type="submit" value="Salvar">
+</form>

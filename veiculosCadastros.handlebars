@@ -24,3 +24,24 @@
         </tbody>
     </table>
 </div>
+app.post('/editVeiculo', function (req, res) {
+const id = req.body.id;
+const name = req.body.name;
+const marca = req.body.marca;
+const modelo = req.body.modelo;
+const ano = req.body.ano;
+const placa = req.body.placa;
+const disponibilidade = req.body.disponibilidade;
+
+const query = `UPDATE veiculos SET marca = ?, modelo = ?, ano = ?, placa = ?, disponibilidade =? WHERE id = ?`;
+const data = [marca, modelo, ano, placa, id];
+pool.query(query, data, function (err, result) {
+if (err) {
+console.log(err);
+res.send('Erro ao atualizar veiculo');
+} else {
+console.log(`Veiculo com ID ${id} atualizado com sucesso`);
+res.redirect('/veiculocadastros');
+}
+});
+});

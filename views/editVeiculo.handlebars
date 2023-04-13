@@ -1,0 +1,28 @@
+<h1>Editar Cadastro dos Veiculos:</h1>
+<form class="form" action="/editVeiculo" method="POST">
+    <div class="form-control">
+        <label for="id">ID do Veículo:</label>
+        <input type="text" name="id" value="{{veiculo.id}}">
+    </div>
+    <div class="form-control">
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" placeholder="Marca" value="{{veiculo.marca}}">
+    </div>
+    <div class="form-control">
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" name="modelo" placeholder="Modelo" value="{{veiculo.modelo}}">
+    </div>
+    <div class="form-control">
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" placeholder="Ano" value="{{veiculo.ano}}">
+    </div>
+    <div class="form-control">
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" name="placa" placeholder="Placa" value="{{veiculo.placa}}">
+    </div>
+    <div class="form-control">
+        <label for="disponibilidade">Disponibilidade:</label>
+        <input type="text" name="disponibilidade" placeholder="Disponibilidade" value="{{veiculo.disponibilidade}}">
+    </div>
+    <input type="submit" value="Editar">
+</form>

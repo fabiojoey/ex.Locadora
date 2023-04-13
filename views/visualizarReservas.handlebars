@@ -1,0 +1,30 @@
+<h1>Visualizar Reservas:</h1>
+<div class="visualizarReservas-container">
+    <table>
+        <thead>
+            <tr>
+
+                <th>ID</th>
+                <th>ID Cliente</th>
+                <th>Nome Cliente</th>
+                <th>ID Veiculo</th>
+                <th>Veículo</th>
+                <th>Data de Início</th>
+                <th>Data de Fim</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each reservas}}
+            <tr>
+                <td>{{ id }}</td>
+                <td>{{ id_cliente }}</td>
+                <td>{{ nome }}</td>
+                <td>{{ id_veiculo }}</td>
+                <td>{{ marca }} - {{ modelo }} ({{ placa }})</td>
+                <td>{{ data_inicio }}</td>
+                <td>{{ data_fim }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
