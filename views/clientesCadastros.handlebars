@@ -1,0 +1,25 @@
+<h1>Clientes Cadastrados:</h1>
+<div class="clientes-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each clientesCadastros}}
+      <tr>
+        <td>{{ id }}</td>
+        <td>{{ nome }}</td>
+        <td>{{ endereco }}</td>
+        <td>{{ telefone }}</td>
+        <td>{{ email }}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

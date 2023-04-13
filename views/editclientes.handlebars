@@ -1,0 +1,22 @@
+<h1>Editar Cadastro do Cliente:</h1>
+<form class="form" action="/editclientes" method="POST">
+  <label for="id">ID do Cliente: </label>
+  <input type="text" name="id" value="{{client.id}}">
+  <div class="form-control">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" placeholder="Nome do cliente" value="{{client.name}}">
+  </div>
+  <div class="form-control">
+    <label for="endereco">Endereco:</label>
+    <input type="text" name="endereco" placeholder="Nome do cliente" value="{{client.endereco}}">
+  </div>
+  <div class="form-control">
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" placeholder="E-mail do cliente" value="{{client.email}}">
+  </div>
+  <div class="form-control">
+    <label for="phone">Telefone:</label>
+    <input type="tel" name="phone" placeholder="Telefone do cliente" value="{{client.phone}}">
+  </div>
+  <input type="submit" value="Editar">
+</form>

@@ -1,0 +1,27 @@
+<h1>Visualizar Veiculos:</h1>
+<div class="visualizarVeiculos-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Placa</th>
+        <th>Disponibilidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each clientesCadastros}}
+      <tr>
+        <td>{{ id }}</td>
+        <td>{{ marca }}</td>
+        <td>{{ modelo }}</td>
+        <td>{{ ano }}</td>
+        <td>{{ placa }}</td>
+        <td>{{ disponibilidade }}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

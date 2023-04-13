@@ -1,0 +1,26 @@
+<h1>Veiculos Cadastro:</h1>
+<div class="veiculos-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each veiculosCadastros}}
+            <tr>
+                <td>{{ id }}</td>
+                <td>{{ marca }}</td>
+                <td>{{ modelo }}</td>
+                <td>{{ ano }}</td>
+                <td>{{ disponibilidade }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
